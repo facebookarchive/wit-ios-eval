@@ -227,7 +227,7 @@ NSString* kv(NSString* key, NSString* value) {
 void translateAbove(UIView* v, CGRect r) {
     CGFloat currentY = v.frame.origin.y;
     CGRect newRect = v.frame;
-    newRect.origin.y = r.origin.y - newRect.size.height;
+    newRect.origin.y = r.origin.y - 2*newRect.size.height;
     v.frame = newRect;
     objc_setAssociatedObject(v, @"realY", @(currentY), OBJC_ASSOCIATION_COPY);
 }
@@ -323,6 +323,7 @@ void restoreY(UIView* v) {
 
 - (void)initialize {
     [Wit sharedInstance].delegate = self;
+    [[Wit sharedInstance] setContext:@{@"reference_time": @"2014-02-02T13:38:02.972Z"}];
     newInstance = [@{} mutableCopy];
     [self instances]; // warm up cache
     id firstInstance = [[self instances] firstObject];

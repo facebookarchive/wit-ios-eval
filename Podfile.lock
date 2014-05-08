@@ -1,6 +1,6 @@
 PODS:
   - CBIntrospect (0.4.2)
-  - Wit (1.1.1)
+  - Wit (1.2.0)
 
 DEPENDENCIES:
   - CBIntrospect (~> 0.4.1)
@@ -12,6 +12,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CBIntrospect: cb2fec92d6678e74d00ef4dd10eaeb9f304af6ef
-  Wit: 44522674cbb279c6ddc5af4b433fc4a9efa353d4
+  Wit: 85ff64bcd1d50fa6676cad9c9d028113be139d76
 
-COCOAPODS: 0.29.0
+COCOAPODS: 0.32.1
