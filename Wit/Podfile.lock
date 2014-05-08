@@ -1,0 +1,13 @@
+PODS:
+  - GHUnitIOS (0.5.8)
+  - OCMock (2.0.1)
+
+DEPENDENCIES:
+  - GHUnitIOS (~> 0.5.6)
+  - OCMock (~> 2.0.1)
+
+SPEC CHECKSUMS:
+  GHUnitIOS: 23167e22b8abe162d71f86bd4bda7550e53414cb
+  OCMock: f0c099603f851d07f8d7f2efe26d05da721ec43f
+
+COCOAPODS: 0.29.0
