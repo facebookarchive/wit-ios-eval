@@ -1,0 +1,17 @@
+PODS:
+  - CBIntrospect (0.4.2)
+  - Wit (1.1.1)
+
+DEPENDENCIES:
+  - CBIntrospect (~> 0.4.1)
+  - Wit (from `./Wit`)
+
+EXTERNAL SOURCES:
+  Wit:
+    :path: ./Wit
+
+SPEC CHECKSUMS:
+  CBIntrospect: cb2fec92d6678e74d00ef4dd10eaeb9f304af6ef
+  Wit: 44522674cbb279c6ddc5af4b433fc4a9efa353d4
+
+COCOAPODS: 0.29.0

@@ -1,0 +1,21 @@
+# OSX
+.DS_Store
+
+# XCode
+xcuserdata
+*~.nib
+build/
+
+# Dropbox
+*conflicted copy*
+
+# Vim
+*.swp
+*.swo
+
+# iOS app
+/Pods
+
+# Node.js server
+/Server/*.db
+/Server/node_modules
