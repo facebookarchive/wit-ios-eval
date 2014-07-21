@@ -12,6 +12,13 @@ pod install
 ## Update Wit iOS SDK
 
 ```
-git merge --squash -s subtree --no-commit wit-ios-sdk/master
+git merge --squash -s subtree --no-commit sdk
 pod update
+```
+
+## Commit back to Wit iOS SDK
+
+```
+git checkout sdk
+git merge --squash -s subtree --no-commit master
 ```
