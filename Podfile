@@ -2,7 +2,7 @@
 # platform :ios, '6.0'
 
 source 'https://github.com/CocoaPods/Specs.git'
-	pod 'Wit', :git => 'https://github.com/wit-ai/wit-ios-sdk.git', :branch => 'fullvad'
+	pod 'Wit', '~> 2.0.0'
 target 'wit-ios-eval' do
 
 end
