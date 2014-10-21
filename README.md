@@ -9,16 +9,10 @@ gem install cocoapods # may need sudo
 pod install
 ```
 
-## Update Wit iOS SDK
+If you had your project `(.xcodeproj)` open in Xcode, close it and open the `.xcworkspace` file instead. From now on, you should only use the `.xcworkspace` file.
 
-```
-git merge --squash -s subtree --no-commit sdk
-pod update
-```
+Set your Wit Access Token in `wit-ios-eval/AppDelegate.m`
 
-## Commit back to Wit iOS SDK
-
-```
-git checkout sdk
-git merge --squash -s subtree --no-commit master
+```objc
+[Wit sharedInstance].accessToken = @"xxx";
 ```
