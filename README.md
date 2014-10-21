@@ -10,3 +10,9 @@ pod install
 ```
 
 If you had your project `(.xcodeproj)` open in Xcode, close it and open the `.xcworkspace` file instead. From now on, you should only use the `.xcworkspace` file.
+
+Set your Wit Access Token in `wit-ios-eval/AppDelegate.m`
+
+```objc
+[Wit sharedInstance].accessToken = @"xxx";
+```
