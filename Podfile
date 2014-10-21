@@ -1,6 +1,13 @@
-platform :ios, '6.0'
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
 
-xcodeproj './Eval.xcodeproj'
+source 'https://github.com/CocoaPods/Specs.git'
+	pod 'Wit', :git => 'https://github.com/wit-ai/wit-ios-sdk.git', :branch => 'fullvad'
+target 'wit-ios-eval' do
 
-pod 'Wit', :path => './Wit'
-pod 'CBIntrospect', '~>0.4.1'
+end
+
+target 'wit-ios-evalTests' do
+
+end
+
