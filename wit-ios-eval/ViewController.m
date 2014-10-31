@@ -60,23 +60,26 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)witDidGraspIntent:(NSString *)intent entities:(NSDictionary *)entities body:(NSString *)body messageId:(NSString *)messageId confidence:(NSNumber *)confidence customData:(id) customData error:(NSError*)e {
+
+- (void)witDidGraspIntent:(NSArray *)outcomes messageId:(NSString *)messageId customData:(id) customData error:(NSError*)e {
     if (e) {
         NSLog(@"[Wit] error: %@", [e localizedDescription]);
-        statusView.text = [e localizedDescription];
         return;
     }
+    NSDictionary *firstOutcome = [outcomes objectAtIndex:0];
+    NSString *intent = [firstOutcome objectForKey:@"intent"];
+    
     
     intentView.text = [NSString stringWithFormat:@"intent = %@", intent];
     statusView.text = @"";
     
     NSData *json;
     NSError *error = nil;
-    if ([NSJSONSerialization isValidJSONObject:entities])
+    if ([NSJSONSerialization isValidJSONObject:outcomes])
     {
         entitiesView.textAlignment = NSTextAlignmentLeft;
         // Serialize the dictionary
-        json = [NSJSONSerialization dataWithJSONObject:entities options:NSJSONWritingPrettyPrinted error:&error];
+        json = [NSJSONSerialization dataWithJSONObject:outcomes options:NSJSONWritingPrettyPrinted error:&error];
         
         // If no errors, let's view the JSON
         if (json != nil && error == nil)
@@ -89,6 +92,8 @@
     }
     
 }
+
+
 
 - (void)witActivityDetectorStarted {
     statusView.text = @"Just listening... Waiting for voice activity";
