@@ -14,6 +14,7 @@
 		0336225619F70FA100498B61 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0336225519F70FA100498B61 /* Images.xcassets */; };
 		0336225919F70FA100498B61 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0336225719F70FA100498B61 /* LaunchScreen.xib */; };
 		0336226519F70FA100498B61 /* wit_ios_evalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0336226419F70FA100498B61 /* wit_ios_evalTests.m */; };
+		E8E283721AAF5E110097CDDC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8E283711AAF5E110097CDDC /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		0336225E19F70FA100498B61 /* wit-ios-evalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wit-ios-evalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0336226319F70FA100498B61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0336226419F70FA100498B61 /* wit_ios_evalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wit_ios_evalTests.m; sourceTree = "<group>"; };
+		E8E283711AAF5E110097CDDC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8E283721AAF5E110097CDDC /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		0336223C19F70FA100498B61 = {
 			isa = PBXGroup;
 			children = (
+				E8E283711AAF5E110097CDDC /* AVFoundation.framework */,
 				0336224719F70FA100498B61 /* wit-ios-eval */,
 				0336226119F70FA100498B61 /* wit-ios-evalTests */,
 				0336224619F70FA100498B61 /* Products */,
@@ -414,6 +418,7 @@
 				0336226A19F70FA100498B61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0336226B19F70FA100498B61 /* Build configuration list for PBXNativeTarget "wit-ios-evalTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +427,7 @@
 				0336226D19F70FA100498B61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
